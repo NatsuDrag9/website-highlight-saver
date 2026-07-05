@@ -1,0 +1,315 @@
+/*
+ * popup.css - Minimalist Black & White Style Sheet (2-Hour Developer Task)
+ * 
+ * Simple, standard, high-contrast black and white theme:
+ * - White background with black text.
+ * - Flat solid borders.
+ * - Standard native-looking inputs and buttons.
+ */
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #ffffff; /* White background */
+  color: #000000;            /* Black text */
+  width: 320px;              /* Popup width */
+  margin: 0;
+  padding: 12px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* Header */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #000000; /* Flat black line */
+}
+
+.brand h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.icon-btn {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 4px 6px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.icon-btn svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  display: block;
+}
+
+/* Settings Panel */
+.settings-panel {
+  background-color: #f3f4f6; /* Very light grey */
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+.settings-panel.hidden {
+  display: none;
+}
+
+.settings-panel h3 {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.password-input-wrapper {
+  display: flex;
+  gap: 6px;
+}
+
+.password-input-wrapper input {
+  flex-grow: 1;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 4px 6px;
+  border-radius: 2px;
+  font-size: 12px;
+}
+
+.small-btn {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  padding: 0 6px;
+  border-radius: 2px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.small-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.helper-text {
+  font-size: 10px;
+  color: #4b5563;
+  margin-top: 2px;
+}
+
+.settings-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.primary-btn {
+  background-color: #000000; /* Solid Black */
+  border: 1px solid #000000;
+  color: #ffffff;            /* White text */
+  padding: 6px 12px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.primary-btn:hover {
+  background-color: #333333;
+}
+
+.danger-btn {
+  background-color: #ffffff;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  padding: 6px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.danger-btn:hover {
+  background-color: #fee2e2;
+}
+
+/* Highlights List */
+.highlights-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #f9fafb;
+  border: 1px dashed #000000;
+  border-radius: 4px;
+}
+
+.empty-icon {
+  width: 28px;
+  height: 28px;
+  fill: #000000;
+  margin-bottom: 6px;
+}
+
+.empty-text-title {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.empty-text-sub {
+  font-size: 11px;
+  color: #4b5563;
+}
+
+/* Highlight Card */
+.highlight-card {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.site-favicon {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #cccccc;
+}
+
+.page-link {
+  font-size: 11px;
+  color: #0066cc; /* Standard blue link */
+  text-decoration: underline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-grow: 1;
+}
+
+.highlight-quote {
+  font-size: 12px;
+  line-height: 1.4;
+  border-left: 2px solid #000000; /* Black border left */
+  padding-left: 6px;
+  margin: 6px 0;
+  color: #000000;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  padding-top: 6px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.date-stamp {
+  font-size: 10px;
+  color: #4b5563;
+}
+
+.card-actions {
+  display: flex;
+  gap: 4px;
+}
+
+.action-btn {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.action-btn svg {
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+}
+
+.action-btn.delete-btn:hover {
+  color: #ef4444;
+  border-color: #ef4444;
+}
+
+/* AI Summary */
+.summary-box {
+  background-color: #f3f4f6;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  padding: 6px;
+  font-size: 10px;
+  color: #000000;
+  margin-top: 6px;
+}
+
+.summary-title {
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 2px;
+}
+
+.summary-loading {
+  font-size: 10px;
+  color: #000000;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.spinner {
+  width: 8px;
+  height: 8px;
+  border: 1.5px solid rgba(0, 0, 0, 0.2);
+  border-top-color: #000000;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
